@@ -4,7 +4,8 @@ import './modules/modals';
 import './modules/latest.posts';
 import './modules/stock-slider';
 
-import { connectForms, cookiecook, showMessageModal, successIcon, successText, messageModal  } from '@alexsab-ru/scripts';
+import ResponsiveMenu from './modules/ResponsiveMenu';
+import { connectForms, cookiecook, showMessageModal, successIcon, successText, messageModal } from '@alexsab-ru/scripts';
 cookiecook();
 connectForms('https://alexsab.ru/lead/kia/', {
 	callback(data){
@@ -20,6 +21,10 @@ connectForms('https://alexsab.ru/lead/kia/', {
 		}, 1000);
 	},
 	confirmModalText: 'Вы уже оставляли заявку сегодня, с Вами обязательно свяжутся в ближайшее время!',
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	new ResponsiveMenu('#site_nav ul');
 });
 
 import GLightbox from 'glightbox';
