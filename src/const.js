@@ -42,7 +42,7 @@ export const LINKS_MENU = [
 	// {url: 'special-offers/', name: 'Спецпредложения'},
 	// {url: 'news/', name: 'Новости'},
 	// {url: 'test-drive/', name: 'Запись на тест-драйв'},
-	{url: 'service-request/', name: 'Запись на сервис'},
+	{url: 'https://service.kia-samara.ru/?utm_source=promo', name: 'Запись на сервис'},
 	{url: '#services', name: 'Услуги'},
 	{url: 'contacts/', name: 'Контакты'},
 ];

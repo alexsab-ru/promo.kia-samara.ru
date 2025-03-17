@@ -36,6 +36,10 @@ export default defineConfig({
 		react(),
 	],
 	redirects: {
+		'/service-request/': {
+			status: 301,
+			destination:'https://service.kia-samara.ru/?utm_source=promo'
+		},
 		'/sportage/': {
 			status: 301,
 			destination:'/models/sportage/'
